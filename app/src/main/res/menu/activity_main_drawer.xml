@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view"
-    >
+    tools:showIn="navigation_view">
 
-    <item android:id="@+id/nav_home"
-        android:title="@string/menu_home"
-        android:icon="@drawable/baseline_home_24"/>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home" />
 
-    <item android:id="@+id/nav_joker_day"
-        android:title="@string/menu_joke_day"
-        android:icon="@drawable/baseline_calendar_today_24"/>
+        <item
+            android:id="@+id/nav_joker_day"
+            android:icon="@drawable/baseline_calendar_today_24"
+            android:title="@string/menu_joke_day" />
 
-    <item android:id="@+id/"
+    </group>
+
+    <item
+        android:id="@+id/nav_social"
+        android:title="@string/social" >
+        <menu android:layout_width="wrap_content" >
+            <item
+                android:id="@+id/nav_about"
+                android:title="@string/menu_about" />
+        </menu>
+    </item>
 
 </menu>
