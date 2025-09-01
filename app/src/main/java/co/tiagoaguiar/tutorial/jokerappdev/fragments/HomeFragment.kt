@@ -32,6 +32,9 @@ class HomeFragment : Fragment() {
         recyclerView.adapter = adapter
 
         adapter.add(CategoryItem(Category("Categoria 1", 0xff9e9e9e)))
+        adapter.add(CategoryItem(Category("Categoria 2", 0xf12711)))
+        adapter.add(CategoryItem(Category("Categoria 3", 0xf5af19)))
+        adapter.add(CategoryItem(Category("Categoria 4", 0xff9e9e9e)))
 
         adapter.notifyDataSetChanged()
     }
