@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.tiagoaguiar.tutorial.jokerappdev.R
+import co.tiagoaguiar.tutorial.jokerappdev.data.CategoryRemoteDataSource
 import co.tiagoaguiar.tutorial.jokerappdev.model.Category
 import co.tiagoaguiar.tutorial.jokerappdev.presentetion.HomePresenter
 import co.tiagoaguiar.tutorial.jokerappdev.view.CategoryItem
