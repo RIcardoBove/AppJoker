@@ -20,12 +20,13 @@ import com.xwray.groupie.GroupieAdapter
 class HomeFragment : Fragment() {
 
     private lateinit var presenter: HomePresenter
-    private lateinit var adapter: GroupieAdapter
+    private val adapter = GroupieAdapter()
     private lateinit var progressBar: ProgressBar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         presenter = HomePresenter(this)
+
     }
 
     override fun onCreateView(
@@ -47,7 +48,6 @@ class HomeFragment : Fragment() {
             presenter.findAllCategory()
         }
 
-        adapter = GroupieAdapter()
         recyclerView.adapter = adapter
 
         adapter.setOnItemClickListener {item, view ->
